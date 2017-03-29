@@ -1,0 +1,64 @@
+﻿1.-Diseña las especificaciones de un ejercicio que requiera el uso 
+de las técnicas de partición de equivalencia y análisis de valores límite.
+2.-Indica a qué nivel de testeo corresponde dicho ejercicio y describe brevemente por qué.
+
+
+
+1.- Resolver el siguiente ejercicio sobre camion que trafica cerdos para hacerlos carnitas
+	el costo de transporte de cada cerdo es normalmente de 6 pesos, a partir de cierta cantidad
+	el costo baja y así te ahorras unas cuantos pesos...
+	a partir de 10 cerdos cuesta 5 pesos
+	a partir de 20 cerdos cuesta 4 pesos
+	a partir de 30 cerdos cuesta 3 pesos
+
+invalido 		valido		valido		valido		valido
+0 cerdos		1-10 cerdos	11-20 cerdos	21-30 cerdos	31 cerdos
+
+valores limite
+1,1,10,11,20,21,30,31
+particion equivalencia
+5,15,25,35
+
+
+
+
+test data		expected result		
+
+0 cerdos		$0			
+1 cerdo		$6 
+10 cerdos		$60 				
+11 cerdos		$55
+20 cerdos		$100
+21 cerdos		$84
+30 cerdos		$120
+31 cerdos		$93
+5 cerdos		$30
+15 cerdos		$75
+25 cerdos		$100
+35 cerdos		$105
+
+Es un testeo no funcional 
+el nivel de prueba podría ser de componente, ya que solo se prueba una pequeña parte.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ejercicio: ___________________________________________
+Nivel de prueba: _________, porque ______
